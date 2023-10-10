@@ -26,5 +26,6 @@ app.use('*', async (c, next) => {
 app.route('/', App);
 
 app.use('/static/*', serveStatic({ root: './assets' }));
+app.use('/posts/img/*', serveStatic({ root: '.' }));
 
 export default app;
