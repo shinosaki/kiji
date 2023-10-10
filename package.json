@@ -36,6 +36,7 @@
     "dev:bun": "bun run --hot src/index.js",
     "deploy": "npm run css:build && npm run posts && wrangler deploy --minify src/worker.js",
     "production": "NODE_ENV=production ./run",
+    "submodules": "git submodule update --remote",
     "build": "npm run css:build && npm run posts && bun build src/index.js --compile --minify --outfile run",
     "build:esm": "esbuild --outdir=dist utils/*.js",
     "build:cjs": "esbuild --outdir=dist/cjs --format=cjs utils/*.js",
