@@ -1,0 +1,6 @@
+name = "blog"
+compatibility_date = "2023-10-01"
+main = "src/worker.js"
+
+[site]
+bucket = "./assets"
