@@ -1,0 +1,3 @@
+[submodule "assets/posts"]
+	path = assets/posts
+	url = github:shinosaki/blog
