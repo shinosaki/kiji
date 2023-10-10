@@ -103,7 +103,7 @@ app.use('*', async (c, next) => {
           : `<span>${config.app.copy.name}</span>`
         }
         <span>&nbsp;|&nbsp;Powered by&nbsp;</span>
-        <a href="https://github.com/shinosaki/blog">shinosaki/blog</a>
+        <a href="https://github.com/shinosaki/kiji">kiji</a>
       </footer>
     </div>
   </body>
@@ -279,7 +279,7 @@ app.use('/feed', async (c, next) => {
         <title>${config.app.name}</title>
         <link>${url.origin}/</link>
         <description>${config.app.description}</description>
-        <generator>https://github.com/shinosaki/blog</generator>
+        <generator>https://github.com/shinosaki/kiji</generator>
         <language>${config.lang ?? 'en'}</language>
         <atom:link href="${c.req.url}" rel="self" type="application/rss+xml"/>
         ${children}
