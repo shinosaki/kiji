@@ -2,5 +2,12 @@ name = "blog"
 compatibility_date = "2023-10-01"
 main = "src/worker.js"
 
+workers_dev = false
+
+[route]
+pattern = "blog.shinosaki.com"
+custom_domain = true
+
 [site]
 bucket = "./assets"
+
