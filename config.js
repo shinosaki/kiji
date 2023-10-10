@@ -2,7 +2,7 @@ export default {
   lang: 'ja',
   // onion: 'hidden.onion',
   cache: {
-    maxAge: 86400,
+    maxAge: 30,
   },
   menus: [
     { title: 'About', link: 'https://shinosaki.com/about' }
