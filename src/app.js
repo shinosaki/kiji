@@ -161,7 +161,7 @@ app.get('/posts/:id', async (c) => {
   const { markdown, title, draft } = parseFrontMatter(md);
 
   return (draft) ? c.notFound()
-    : (id.endsWith('.md')) ? c.text(md) : c.render((`
+    : (id.endsWith('.md')) ? c.text(markdown) : c.render((`
       <article class="post">
         <h1>${title}</h1>
         ${marked(markdown)}
@@ -267,7 +267,6 @@ app.get('/search', async (c) => {
     </div>
   ), { title: `"${q}" の検索結果` });
 });
-
 
 
 app.use('/feed', async (c, next) => {
